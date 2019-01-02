@@ -11,7 +11,7 @@ li {
 }
 
 img {
-    width: 450px;
+	width: 450px;
 }
 
 h1 {
@@ -42,6 +42,14 @@ h1 {
 	border-bottom: 5px solid #1F313C;
 }
 
+.img .logoTiru {
+	position: relative;
+	animation-name: logoAnimation;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
 @media (max-width: 500px) {
 
 	img {
@@ -55,4 +63,13 @@ h1 {
     .buscador {
         width: 100%;
     }
+}
+
+@keyframes logoAnimation {
+	0% {
+		transform: scale(0.9);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
