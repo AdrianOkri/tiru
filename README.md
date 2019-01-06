@@ -1,5 +1,5 @@
 # Tiru buscador
 
-+ Primer proyecto. Una caja de texto que nos envía al buscador de google. Solamente HTML y CSS
++ Primer proyecto. Theme in Google
 
 https://adrianokri.github.io/tiru/
