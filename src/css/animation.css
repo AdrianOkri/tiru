@@ -1,6 +1,6 @@
 
 .animated-text {
-    position: absolute;
+    position: relative;
     left: 50%;
     top: 64%;
     transform: translate(-50%, -50%);
