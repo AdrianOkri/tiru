@@ -1,162 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Tiru Buscador</title>
-  <link rel="shortcut icon" href="./imagenes/tiru4_1.jpg" type="image/x-icon">
-  <!-- BOOTSTRAP CDN -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-    crossorigin="anonymous">
-  <!-- GOOGLE FONTS -->
-  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-  <!-- FONTAWESOME -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-    crossorigin="anonymous">
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TiruBuscador</title>
+    <link rel="shortcut icon" href="tiru/imagenes/tiru5.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/animation.css">
+    <link rel="stylesheet" href="src/css/stars.css">
 </head>
-
 <body>
-  <!-- NAVIGATION -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #2f2f2f;">
-    <a class="navbar-brand" href="#">Tiru Buscador</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav pl-5">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            <i class="fab fa-facebook-square"></i> Redes sociales
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="https://twitter.com">Twitter</a>
-            <a class="dropdown-item" href="https://www.facebook.com/">Facebook</a>
-            <a class="dropdown-item" href="https://github.com/">Github</a>
-            <a class="dropdown-item" href="https://mx.linkedin.com/">Linkedin</a>
-            <a class="dropdown-item" href="https://www.meetup.com/es/">Meetup</a>
-            <a class="dropdown-item" href="https://www.reddit.com/">Reddit</a>
-            <a class="dropdown-item" href="https://www.wattpad.com">Wattpad</a>
-          </div>
-        </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            <i class="fas fa-tv"></i> Entretenimiento
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="https://www.youtube.com/">Youtube</a>
-            <a class="dropdown-item" href="https://www.netflix.com/mx/">Netflix</a>
-            <a class="dropdown-item" href="https://www.clarovideo.com">ClaroVideo</a>
-            <a class="dropdown-item" href="https://soundcloud.com/">Soundcloud</a>
-            <a class="dropdown-item" href="http://animeflv.net/">Animeflv</a>
-            <a class="dropdown-item" href="http://indiehorrorrpg.blogspot.mx/">Indiehorror</a>
-            <a class="dropdown-item" href="https://www.chess.com/">Chess.com</a>
-            <a class="dropdown-item" href="http://worldofsteven.com/">Worldofsteven</a>
-          </div>
-        </li>
+    <!-- Stars -->
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <!-- Stars -->
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            <i class="fas fa-atlas"></i> Educación
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="https://platzi.com/">Platzi</a>
-            <a class="dropdown-item" href="https://www.udemy.com/">Udemy</a>
-            <a class="dropdown-item" href="http://www.faztweb.com/">Faztweb</a>
-            <a class="dropdown-item" href="https://codigofacilito.com/">Codigofacilito</a>
-            <a class="dropdown-item" href="https://devcode.la/">Devcode</a>
-            <a class="dropdown-item" href="https://miriadax.net/home">Miriadax</a>
-            <a class="dropdown-item" href="https://aprende.org">Aprende.org</a>
-            <a class="dropdown-item" href="http://eliezermolina.net/">Eliezermolina</a>
-            <a class="dropdown-item" href="https://es.khanacademy.org/">Khanacademy</a>
-            <a class="dropdown-item" href="https://www.coursera.org">coursera</a>
-            <a class="dropdown-item" href="https://brilliant.org/">Brilliant</a>
-            <a class="dropdown-item" href="https://www.edx.org/es">edx</a>
-          </div>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false">
-          <i class="fas fa-search"></i> Buscadores
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="https://www.google.com/">Google</a>
-            <a class="dropdown-item" href="https://www.bing.com/">Bing</a>
-            <a class="dropdown-item" href="https://yandex.com/">Yandex</a>
-            <a class="dropdown-item" href="https://www.tineye.com/">Tineye</a>
-            <a class="dropdown-item" href="https://www.shodan.io/">Shodan</a>
-            <a class="dropdown-item" href="https://who.is/">Who.is</a>
-            <a class="dropdown-item" href="https://www.exploit-db.com/">Exploit db</a>
-          </div>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            <i class="fas fa-plus-square"></i> Otros
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="https://tradukka.com">Tradukka</a>
-            <a class="dropdown-item" href="https://adrianokri.github.io/CryptoManual/">CryptoManual 1</a>
-            <a class="dropdown-item" href="https://www.sololearn.com/">SoloLearn</a>
-            <a class="dropdown-item" href="https://icomoon.io/app/#/select">Icomoon</a>
-            <a class="dropdown-item" href="http://codepen.io">Codepen</a>
-            <a class="dropdown-item" href="https://outlook.live.com/">Outlook</a>
-            <a class="dropdown-item" href="https://esgeeks.com/">EsGeeks</a>
-            <a class="dropdown-item" href="https://openlibra.com/es/">Openlibra</a>
-            <a class="dropdown-item" href="https://iplogger.org/es/">Iplogger</a>
-            <a class="dropdown-item" herf="https://dialogflow.com/">DialogFlow</a>
-          </div>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="https://r3gularweb.blogspot.com/">
-            <i class="fab fa-blogger"></i> R3gularWeb</a>
-        </li>
-      </ul>
+    <!-- MENU -->
+    <div class="ui inverted menu"> <!-- nine item -->
+        <a class="active teal  item">Tiru Buscador </a>
+        <div class="ui pointing dropdown link item">
+            <span class="text">Social Media</span>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+                <div class="header">Redes</div>
+                <a class="item" href="https://twitter.com/home">Twitter</a>
+                <a class="item" href="https://www.facebook.com/">Facebook</a>
+                <a class="item" href="https://www.reddit.com/">Reddit</a>
+                <a class="item" href="https://www.instagram.com/">Instagram</a>
+                <a class="item" href="https://aminoapps.com">Amino</a>
+                <a class="item" href="https://www.tiktok.com/">TikTok</a>
+                <a class="item" href="https://discord.com/">Discord</a>
+                <div class="divider"></div>
+                <div class="header">Trabajo</div>
+                <a class="item" href="https://github.com/">Github</a>
+                <a class="item" href="https://gitlab.com/">Gitlab</a>
+                <a class="item" href="https://mx.linkedin.com/">Linkedin</a>
+            </div>
+        </div>
+        <div class="ui pointing dropdown link item">
+            <span class="text">Entretenimiento</span>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+                <div class="header">Vídeo</div>
+                <a class="item" href="https://www.youtube.com/">Youtube</a>
+                <a class="item" href="https://www.twitch.tv/">Twitch</a>
+                <a class="item" href="https://www.netflix.com/">Netflix</a>
+                <a class="item" href="https://www.clarovideo.com/">ClaroVideo</a>
+                <a class="item" href="https://animeflv.net/">Animeflv</a>
+                <a class="item" href="https://worldofsteven.com/">Worldofsteven</a>
+                <div class="divider"></div>
+                <div class="header">Videojuegos</div>
+                <a class="item" href="https://www.chess.com/">Chess.com</a>
+                <a class="item" href="http://indiehorrorrpg.blogspot.com/">Indiehorror</a>
+                <a class="item" href="https://store.steampowered.com/">Steam</a>
+            </div>
+        </div>
+        <div class="ui pointing dropdown link item">
+            <span class="text">Educación</span>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+                <div class="item">
+                    <span class="text">Cursos</span>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item" href="https://platzi.com/">Platzi</a>
+                        <a class="item" href="https://www.udemy.com/">Udemy</a>
+                        <a class="item" href="https://codigofacilito.com/">CodigoFacilito</a>
+                        <a class="item" href="https://ed.team/">Edteam</a>
+                        <a class="item" href="https://devcode.la/">Devcode</a>
+                        <a class="item" href="https://miriadax.net/home">Miriadax</a>
+                        <a class="item" href="https://aprende.org/">Aprende.org</a>
+                        <a class="item" href="https://www.khanacademy.org/">Khanacademy</a>
+                        <a class="item" href="https://www.coursera.org/">Coursera</a>
+                        <a class="item" href="https://www.edx.org/">edx</a>
+                        <a class="item" href="https://brilliant.org/">Brilliant</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="text">Blogs</span>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item" href="https://r3gularweb.blogspot.com/">R3gularWeb</a>
+                        <a class="item" href="https://eliezermolina.net/">Eliezermolina</a>
+                        <a class="item" href="https://www.faztweb.com/">FaztWeb</a>
+                        <a class="item" href="https://esgeeks.com/">EsGeek</a>
+                        <a class="item" href="https://www.hackplayers.com/">Hackplayers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui pointing dropdown link item">
+            <span class="text">Buscadores</span>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+                <a class="item" href="http://google.com/">Google</a>
+                <a class="item" href="https://duckduckgo.com/">Duckduckgo</a>
+                <a class="item" href="https://www.bing.com/">Bing</a>
+                <a class="item" href="https://yandex.com/">Yandex</a>
+                <a class="item" href="https://tineye.com/">Tineye</a>
+                <a class="item" href="https://www.shodan.io/">Shodan</a>
+                <a class="item" href="https://who.is/">Who.is</a>
+                <a class="item" href="https://www.exploit-db.com/">Exploit db</a>
+            </div>
+        </div>
+        <div class="ui pointing dropdown link item">
+            <span class="text">Desarrollo</span>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+                <a class="item" href="https://codepen.io/">Codepen</a>
+                <a class="item" href="https://www.sololearn.com/">Sololearn</a>
+                <a class="item" href="https://www.tensorflow.org/">TensowFlow</a>
+                <a class="item" href="https://dialogflow.cloud.google.com/#/login">DialogFlow</a>
+                <a class="item" href="https://stackoverflow.com/">Stackoverflow</a>
+            </div>
+        </div>
+        <div class="ui pointing dropdown link item">
+            <span class="text">Otros</span>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+                <a class="item" href="https://tradukka.com/translate">Traduka</a>
+                <a class="item" href="https://outlook.live.com/email">Outlook</a>
+                <a class="item" href="https://openlibra.com/es/">OpenLibra</a>
+                <a class="item" href="https://iplogger.org/">Iplogger</a>
+                <a class="item" href="https://icomoon.io/">Icomoon</a>
+            </div>
+        </div>
     </div>
-  </nav>
-  <!-- NAVIGATION -->
-  <!-- PRINCIAPL -->
-  <div class="container principal mt-5" style="width:100%; height:100%;">
-    <div class="img">
-      <img class="logoTiru" src="imagenes/tiru4.jpg">
-      <h1>Tiru - Buscador</h1>
+    <!-- MENU -->
+
+    <!-- PRINCIAPL -->
+    <div class="container principal mt-5" style="width:100%; height:100%;">
+        <div class="img">
+            <img class="logoTiru" src="src/imagenes/tiru5.png"><br>
+            <div class="animated-text hidden-text">
+                <ul>
+                    <li>T</li><li>i</li><li>r</li><li>u</li>
+                    <li></li><li>B</li><li>u</li><li>s</li>
+                    <li>c</li><li>a</li><li>d</li><li>o</li>
+                    <li>r</li>
+                </ul>
+            </div>
+        </div>
+        <div class="buscador">
+            <!-- Búsqueda Google -->
+            <form method=GET action="https://duckduckgo.com/" id="formGoogle">
+                <table>
+                    <tr>
+                        <td>
+                            <a HREF="https://duckduckgo.com/"></a>
+                            <div class="ui icon">
+                                <input type="text" placeholder="Buscar..." name=q size=65 maxlength=255 value="">
+                                <input type="hidden" name=t value=hk>
+                                <input TYPE=hidden name=ia value=webs>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <!-- Búsqueda Google -->
+        </div>
     </div>
-    <div class="buscador">
-      <!-- Búsqueda Google -->
-      <FORM method=GET action="http://www.google.com/search">
-        <TABLE>
-          <tr>
-            <td>
-              <A HREF="http://www.google.com/"></A>
-              <INPUT TYPE=text placeholder="  Buscar &#128270;" name=q size=65 maxlength=255 value="" class="input1">
-              <INPUT TYPE=hidden name=hl value=es>
-              <!-- <INPUT  type=submit name=btnG VALUE="Tiru-Buscador"> -->
-            </td>
-          </tr>
-        </TABLE>
-      </FORM>
-      <!-- Búsqueda Google -->
-    </div>
-  </div>
-  <!-- PRINCIAPL -->
-  <!-- SCRIPTS BOOTSTRAP CDN-->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-    crossorigin="anonymous"></script>
+    <!-- PRINCIAPL -->
+    
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script>
+        $('.ui.dropdown').dropdown();
+    
+        function search() {
+            $("#formGoogle").submit();
+        }
+    </script>
+    <script src="src/js/animation.js"></script>
+    <!-- SCRIPTS -->
 </body>
-
 </html>
